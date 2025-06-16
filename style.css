@@ -1,0 +1,147 @@
+/* Base theme variables */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color, #f8f9fa);
+  color: var(--text-color, #212529);
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-color: #1f1f1f;
+  --button-color: #4a90e2;
+  --button-hover: #357ABD;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(135deg, #5a67d8, #7f9cf5);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Flex row: logo + text */
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.logo-gif {
+  width: 60px;
+  border-radius: 10px;
+}
+
+/* Column layout for title and tagline */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.tagline {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  margin: 20px 0;
+}
+.filter-btn {
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #434190;
+}
+
+/* Tool Cards */
+.tools-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.tool-card {
+  background-color: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: background 0.3s, color 0.3s;
+}
+.tool-card h3 {
+  font-size: 1.4rem;
+  color: #4a56e2;
+}
+.tool-card p,
+.tool-card li {
+  color: #00bfff;
+}
+.tool-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.tool-card li {
+  margin: 5px 0;
+}
+.tool-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.tool-card button:hover {
+  background-color: #434190;
+}
+
+/* Dark mode card styles */
+body.dark .tool-card {
+  background-color: var(--card-color);
+  color: var(--text-color);
+}
+body.dark .tool-card h3 {
+  color: #7f9cf5;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border: none;
+  background-color: rgba(255,255,255,0.3);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}

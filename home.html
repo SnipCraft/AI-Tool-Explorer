@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tool Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="Logo.gif" alt="AI Tool Explorer logo" class="logo-gif" />
+      <div class="header-text">
+        <h1>AI Tool Explorer</h1>
+        <p class="tagline">Discover, Compare, Master the Tools of Tomorrow.</p>
+      </div>
+    </div>
+    <button id="theme-toggle">🌙</button>
+    <p>Explore top AI tools and their use cases 🔍</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="dev">💻 Dev</button>
+    <button class="filter-btn" data-category="mobile">📱 Mobile</button>
+    <button class="filter-btn" data-category="media">🎨 Media</button>
+    <button class="filter-btn" data-category="daily">🧘 Daily Use</button>
+    <button class="filter-btn" data-category="research">🔬 Research</button>
+  </div>
+
+  <section class="tools-section">
+  <div class="tool-card" data-category="daily">
+    <h3>ChatGPT</h3>
+    <p><strong>Company:</strong> OpenAI</p>
+    <p><strong>Field:</strong> Daily Use / Education / Dev</p>
+    <ul>
+      <li>Answer questions</li>
+      <li>Write content</li>
+      <li>Code help</li>
+    </ul>
+    <a href="https://chat.openai.com/" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="research">
+    <h3>Gemini</h3>
+    <p><strong>Company:</strong> Google DeepMind</p>
+    <p><strong>Field:</strong> Research / Education / Assistant</p>
+    <ul>
+      <li>Multimodal AI</li>
+      <li>Web results + reasoning</li>
+    </ul>
+    <a href="https://gemini.google.com/" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="research">
+    <h3>Meta AI</h3>
+    <p><strong>Company:</strong> Meta (Facebook)</p>
+    <p><strong>Field:</strong>Social Media / Daily Life / Education</p>
+    <ul>
+      <li>Social messaging</li>
+      <li>Image generation</li>
+    </ul>
+    <a href="https://www.meta.ai/" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="research">
+    <h3>Claude</h3>
+    <p><strong>Company:</strong> Anthropic</p>
+    <p><strong>Field:</strong> Research / Chatbot</p>
+    <ul>
+      <li>Long document analysis</li>
+      <li>Safer AI assistant</li>
+    </ul>
+    <a href="https://claude.ai/" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="research">
+    <h3>Perplexity</h3>
+    <p><strong>Company:</strong> Perplexity AI</p>
+    <p><strong>Field:</strong> Research / Search</p>
+    <ul>
+      <li>AI search engine</li>
+      <li>Real-time web results</li>
+    </ul>
+    <a href="https://www.perplexity.ai/" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="dev">
+    <h3>GitHub Copilot</h3>
+    <p><strong>Company:</strong> GitHub / Microsoft</p>
+    <p><strong>Field:</strong> Development</p>
+    <ul>
+      <li>AI code suggestions</li>
+      <li>IDE assistant</li>
+    </ul>
+    <a href="https://github.com/features/copilot" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="media">
+    <h3>Sora</h3>
+    <p><strong>Company:</strong> OpenAI</p>
+    <p><strong>Field:</strong> Media / Video AI</p>
+    <ul>
+      <li>AI video from text</li>
+      <li>Realistic video generation</li>
+    </ul>
+    <a href="https://openai.com/sora" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+
+  <div class="tool-card" data-category="media">
+    <h3>DALL·E</h3>
+    <p><strong>Company:</strong> OpenAI</p>
+    <p><strong>Field:</strong> Art / Design / Creativity</p>
+    <ul>
+      <li>AI image generation</li>
+      <li>Image editing (inpainting)</li>
+    </ul>
+    <a href="https://openai.com/dall-e" target="_blank">
+      <button>Visit</button>
+    </a>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
