@@ -22,7 +22,7 @@ Discover and explore the top AI tools that are shaping the future of technology.
 
 
 ## 🌐 Live Preview
-[🔗 View Site : https://byaditi.github.io/AI-Tool-Explorer/
+🔗 View Site : https://snipcraft.github.io/AI-Tool-Explorer
 
 
 ## ✍️ Author
